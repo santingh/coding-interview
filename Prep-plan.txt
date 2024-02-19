@@ -1,0 +1,15 @@
+https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+https://leetcode.com/discuss/interview-question/1563880/all-you-need-this-for-better-preparation
+
+1.Tags(2 Hard, 6 Medium, 2 Easy)
+  BFS/DFS
+  Tree
+  Graph (Dijkstra, Bellman Ford, Floyd Warshalls, Tarjans, Union-Find)
+  Stack/Queue/Monotonic stack
+  String
+  2-pointer
+  Heap
+
+2.HEap, Graph, DP, BFS cards
+3.Solve Google card and top google questions
