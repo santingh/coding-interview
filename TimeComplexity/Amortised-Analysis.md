@@ -3,5 +3,6 @@ The General idea is even if some operations are expensive, the avg time complexi
 It is generally used for Union-Find, Splay Tree and Hash-Map. 
 
 Eg: HashTable Insertions
-https://media.geeksforgeeks.org/wp-content/cdn-uploads/Dynamic-Table.png![image](https://github.com/santingh/coding-interview/assets/16878844/79e9db77-e76e-40a6-bca4-0f483e54186b)
+https://media.geeksforgeeks.org/wp-content/cdn-uploads/Dynamic-Table.png![image](https://github.com/santingh/coding-interview/assets/16878844/389d0c04-3533-429e-8fdd-e8d13524a784)
+
 
