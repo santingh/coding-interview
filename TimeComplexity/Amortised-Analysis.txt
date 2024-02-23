@@ -1,0 +1,3 @@
+Amortised Time complexity analysis is used for algorithms which involves multiple operations. 
+The General idea is even if some operations are expensive, the avg time complexity remains constant. 
+It is generally used for Union-Find, Splay Tree and Hash-Map. 
