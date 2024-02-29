@@ -29,7 +29,7 @@ class Solution {
             // check if its marker for level change
             int room = q.remove();
             if (room == Integer.MIN_VALUE){
-                if (q.peek() != null && q.peek() == Integer.MIN_VALUE){
+                if (q.peek() == null || q.peek() == Integer.MIN_VALUE){
                     // two consequetive markers denote end of BFS
                     break;
                 } else {
