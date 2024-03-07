@@ -11,3 +11,8 @@
    int n = cArray[i] - '0';
    cArray[i] = (char) (n2 + '0');
 
+
+3. **Stack Usage**
+
+   process of storing elements and then walking back through them matches the behavior of a stack. 
+
