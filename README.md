@@ -1,19 +1,23 @@
 # Coding Interview
 
 
-1.Tags(2 Hard, 6 Medium, 2 Easy)
+1.Cards to Learn
 
    [BFS/DFS](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/)
-  
-   [Tree](https://leetcode.com/explore/learn/card/data-structure-tree/)
-  
+
    [Graph](https://leetcode.com/explore/learn/card/graph/)
-  
-   [Heap](https://leetcode.com/explore/learn/card/heap/)
   
    [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
    
    [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
+
+   [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/)
+
+   [Heap](https://leetcode.com/explore/learn/card/heap/)
+  
+   [Tree](https://leetcode.com/explore/learn/card/data-structure-tree/)
+  
+   
   
   
 2. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
