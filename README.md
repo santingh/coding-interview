@@ -12,6 +12,8 @@
    [Heap](https://leetcode.com/explore/learn/card/heap/)
   
    [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
+   
+   [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
   
   
 2. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
