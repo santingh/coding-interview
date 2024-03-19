@@ -3,17 +3,17 @@
 
 ## Cards to Learn
 
-   - [ ] [BFS/DFS](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/)
+   - [x] [BFS/DFS](https://leetcode.com/explore/learn/card/queue-stack/232/practical-application-stack/)
 
    - [ ] [Graph](https://leetcode.com/explore/learn/card/graph/)
   
    - [ ] [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
    
-   - [ ] [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
+   - [x] [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
 
-   - [ ] [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/)
+   - [x] [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/)
 
-   - [ ] [Heap](https://leetcode.com/explore/learn/card/heap/)
+   - [x] [Heap](https://leetcode.com/explore/learn/card/heap/)
   
 
 ## Practice Problems
