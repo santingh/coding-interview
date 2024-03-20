@@ -60,6 +60,59 @@
       })
      }
    ```
+
+11. **Union Find Pattern**
+
+```
+  class UnionFind {
+    private int[] root;
+
+    public UnionFind(int size) {
+        root = new int[size];
+        for (int i = 0; i < size; i++) {
+            root[i] = i;
+        }
+    }
+
+    public int find(int x) {
+        if (x == root[x]) {
+            return x;
+        }
+        return root[x] = find(root[x]);
+    }
+
+    public void union(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+        if (rootX != rootY) {
+            root[rootY] = rootX;
+        }
+    }
+
+    public boolean connected(int x, int y) {
+        return find(x) == find(y);
+    }
+}
+```
+
+12. **Backtracking Patter**
+
+```
+ def backtrack(candidate):
+    if find_solution(candidate):
+        output(candidate)
+        return
+    
+    # iterate all possible candidates.
+    for next_candidate in list_of_candidates:
+        if is_valid(next_candidate):
+            # try this partial candidate solution
+            place(next_candidate)
+            # given the candidate, explore further.
+            backtrack(next_candidate)
+            # backtrack
+            remove(next_candidate)
+```
    
    
    
