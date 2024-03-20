@@ -38,8 +38,25 @@
    left = n*2
    
    right = n*2 + 1
-   
+
    leaf Node = index > n/2
+
+9. **Sorting 2-D Array Ascending Order**
+   ```
+   sort(int[][] logs){
+     Arrays.sort(logs, new Comparator<int[]>(){
+        @Override
+        public int compare(int[] log1, int[] log2){
+           Integer a1 = Integer.valueOf(log1[0]);
+           Integer a2 = Integer.valueOf(log2[0]);
+           return a1.compareTo(a2);
+        }
+        
+      })
+     }
+   ```
+   
+   
    
    
 
