@@ -123,7 +123,20 @@ PriorityQueue<> heap = new PriorityQueue<>();
 //Max Heap
 PriorityQueue<> heap = new PriorityQueue<>(Collections.reverseOrder());
 ```   
-   
-   
+
+14. **Divide & Conquer**
+```
+public XYZ[] dc(XYZ[] xyz){
+  if (xyz.length == 1){
+    return xyz;
+  }
+
+  mid = xyz.length/2;
+  XYZ[] s1 = dc(Arrays.copyOfRange(xyz, 0, mid))
+  XYZ[] s2 = dc(Arrays.copyOfRange(xyz, mid, xyz.length));
+
+  return merge(s1,s2);
+}
+```
    
 
