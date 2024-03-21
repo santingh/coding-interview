@@ -113,7 +113,16 @@
             # backtrack
             remove(next_candidate)
 ```
-   
+
+13. **Min-Max Heap**
+
+```
+// Min Heap
+PriorityQueue<> heap = new PriorityQueue<>();
+
+//Max Heap
+PriorityQueue<> heap = new PriorityQueue<>(Collections.reverseOrder());
+```   
    
    
    
