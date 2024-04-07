@@ -61,6 +61,11 @@
      }
    ```
 
+```
+Collections.sort(logs, (a, b) -> Integer.compare(a[0], b[0]));
+
+```
+
 11. **Union Find Pattern**
 
 ```
