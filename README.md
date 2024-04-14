@@ -37,3 +37,5 @@ Extra
 
 Meta Interview Guide - https://interviewing.io/guides/hiring-process/meta-facebook
 Google Interview Guide - https://interviewing.io/guides/hiring-process/google#google
+
+System Design - https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
