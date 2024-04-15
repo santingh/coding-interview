@@ -26,6 +26,8 @@
 
 Company Specific - [Google](https://leetcode.com/company/google/)
 
+Arrays Practise problems - https://www.geeksforgeeks.org/array-data-structure/?ref=shm
+
 Extra
    https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode
    
