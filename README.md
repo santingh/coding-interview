@@ -7,7 +7,7 @@
 
    - [ ] [Graph](https://leetcode.com/explore/learn/card/graph/)
   
-   - [ ] [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
+   - [x] [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
    
    - [x] [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
 
@@ -15,7 +15,9 @@
 
    - [x] [Heap](https://leetcode.com/explore/learn/card/heap/)
          
-   - [ ] [Code Template](https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4723/) 
+   - [ ] [Code Template](https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4723/)
+   - [ ] [Trie](https://leetcode.com/explore/learn/card/trie/)
+   - [ ] []
   
 
 ## Practice Problems
