@@ -46,3 +46,4 @@ System Design - https://github.com/jwasham/coding-interview-university?tab=readm
 
 https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
 https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course
