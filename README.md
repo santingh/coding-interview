@@ -43,3 +43,6 @@ Meta Interview Guide - https://interviewing.io/guides/hiring-process/meta-facebo
 Google Interview Guide - https://interviewing.io/guides/hiring-process/google#google
 
 System Design - https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
+
+https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
+https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
