@@ -127,6 +127,15 @@ PriorityQueue<> heap = new PriorityQueue<>();
 
 //Max Heap
 PriorityQueue<> heap = new PriorityQueue<>(Collections.reverseOrder());
+
+// comparator on pair
+Queue<Pair<Integer, Integer>> pq = new PriorityQueue<Pair<Integer,Integer>>
+            (Comparator.comparing(Pair::getKey));
+
+// compator on custom class
+Queue<Edge> pq = new PriorityQueue<>
+            ((a,b) -> a.cost - b.cost);
+
 ```   
 
 14. **Divide & Conquer**
