@@ -152,5 +152,10 @@ public XYZ[] dc(XYZ[] xyz){
   return merge(s1,s2);
 }
 ```
+
+15. **Collection Copies**
+    ```
+    String strPwd = String.join("", Collections.nCopies(n, "0"));
+    ```
    
 
