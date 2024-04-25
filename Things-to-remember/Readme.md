@@ -17,23 +17,26 @@
 4. **Stack Usage**
 
    process of storing elements and then walking back through them matches the behavior of a stack.
+```
+   Deque<Character> stack = new LinkedList<>();
+```
 
 
-5. **Shortest Path**
+6. **Shortest Path**
 
    1. BFS guarantees that you find the shortest path first because it explores nodes level by level
    2. While DFS can be used to find paths, it doesn't guarantee finding the shortest path, especially in graphs with weighted edges.
 
 
-6. **Cycle Detection**
+7. **Cycle Detection**
    
    DFS is more suitable for tasks like topological sorting, cycle detection, or searching for paths without concern for their length.
 
-7. **Disjoint Set(Union Find)**
+8. **Disjoint Set(Union Find)**
    
    The primary use of disjoint sets is to address the connectivity between the components of a network. The “network“ here can be a computer network or a social network. For instance, we can use a disjoint set to determine if two people share a common ancestor.
 
-8. **Binary Tree To Array**
+9. **Binary Tree To Array**
 
 ```
    parent = n/2
