@@ -56,3 +56,4 @@ Technical Papers :
 5. Facebook Memcache (KV store): https://lnkd.in/eYZM5SPb
 6. LinkedIn Kafka (PubSub): https://lnkd.in/eGcagdRA
 7. Amazon DynamoDB: https://lnkd.in/eQxJXgMs
+8. https://interviewready.io/blog/white-papers-worth-reading-for-software-engineers?gad_source=1&gclid=Cj0KCQjwir2xBhC_ARIsAMTXk848dUYGvpSHdTJ5lWEGOln2DWdSCfaNwH_V8-9lbaz4S0YUZjEAnRAaAgqVEALw_wcB
