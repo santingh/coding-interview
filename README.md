@@ -42,13 +42,19 @@ Extra
 Meta Interview Guide - https://interviewing.io/guides/hiring-process/meta-facebook
 Google Interview Guide - https://interviewing.io/guides/hiring-process/google#google
 
-System Design - https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
+**System Design**
 
+**Git Hub**
+https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
+https://github.com/InterviewReady/system-design-resources
+
+
+**Courses**
 https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
 https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
 https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course
 
-Technical Papers :
+**Technical Papers** :
 1. Google File System (GFS): https://lnkd.in/eVyZpQ98
 2. Google Chubby Locking Service: https://lnkd.in/eEXa6WYH
 3. Meta XFaaS: Hyperscale and Low-cost serverless functions: https://lnkd.in/eHqbPXpH
