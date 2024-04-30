@@ -166,6 +166,7 @@ public XYZ[] dc(XYZ[] xyz){
     - Starts with 0 edges and iteratievely calculates shortest path upto N-1 edges. 
     - Works for Negative weight
     - Bellman Ford algorithm works by overestimating the length of the path from the starting vertex to all   other vertices. Then it iteratively relaxes those estimates by finding new paths that are shorter than the previously overestimated paths.
-    - Can detect negative cycle. 
+    - Can detect negative cycle.
+    - Example: You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.
    
 
