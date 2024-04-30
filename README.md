@@ -16,8 +16,8 @@
    - [x] [Heap](https://leetcode.com/explore/learn/card/heap/)
          
    - [ ] [Code Template](https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4723/)
+         
    - [ ] [Trie](https://leetcode.com/explore/learn/card/trie/)
-   - [ ] []
   
 
 ## Practice Problems
@@ -28,7 +28,7 @@
 
 Company Specific - [Google](https://leetcode.com/company/google/)
 
-Arrays Practise problems - https://www.geeksforgeeks.org/array-data-structure/?ref=shm
+[Arrays Practise problems](https://www.geeksforgeeks.org/array-data-structure/?ref=shm)
 
 Extra
    https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode
@@ -39,20 +39,20 @@ Extra
    
 
 
-Meta Interview Guide - https://interviewing.io/guides/hiring-process/meta-facebook
-Google Interview Guide - https://interviewing.io/guides/hiring-process/google#google
+- [Meta Interview Guide](https://interviewing.io/guides/hiring-process/meta-facebook)
+- [Google Interview Guide](https://interviewing.io/guides/hiring-process/google#google)
 
 **System Design**
 
 **Git Hub**
-https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
-https://github.com/InterviewReady/system-design-resources
+1. https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#system-design-scalability-data-handling
+2. https://github.com/InterviewReady/system-design-resources
 
 
 **Courses**
-https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
-https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
-https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course
+1. https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
+2. https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+3. https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course
 
 **Technical Papers** :
 1. Google File System (GFS): https://lnkd.in/eVyZpQ98
