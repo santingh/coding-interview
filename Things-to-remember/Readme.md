@@ -160,5 +160,11 @@ public XYZ[] dc(XYZ[] xyz){
     ```
     String strPwd = String.join("", Collections.nCopies(n, "0"));
     ```
+
+16. **Bellman Ford Algorithm**
+    - Vertex oriented
+    - Works for Negative weight
+    - Bellman Ford algorithm works by overestimating the length of the path from the starting vertex to all   other vertices. Then it iteratively relaxes those estimates by finding new paths that are shorter than the previously overestimated paths.
+    - 
    
 
