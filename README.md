@@ -9,7 +9,7 @@
   
    - [x] [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
    
-   - [x] [Binary Search](https://leetcode.com/explore/learn/card/binary-search/136/template-analysis/935/)
+   - [x] [Binary Search](https://towardsdatascience.com/powerful-ultimate-binary-search-template-and-many-leetcode-problems-1f850ef95651)
 
    - [x] [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/)
 
