@@ -85,5 +85,13 @@ public int fn(int[] arr) {
 
 [Sliding Window Tag](https://leetcode.com/tag/sliding-window/)
 
+LongestSubstring - without repeating characters,
+
+Longest Substring - at most 2 distinct characters,
+
+Longest Substring - at most K distinct characters
+
+LongestSubstring - without repeating characters
+
 
 
