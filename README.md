@@ -9,7 +9,9 @@
   
    - [x] [DP](https://leetcode.com/explore/learn/card/dynamic-programming/)
    
-   - [x] [Binary Search](https://towardsdatascience.com/powerful-ultimate-binary-search-template-and-many-leetcode-problems-1f850ef95651)
+   - [ ] [Binary Search](https://leetcode.com/problemset/?page=1&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUkVRVUVOQ1kifV0%3D&difficulty=HARD&topicSlugs=binary-search)
+         
+   - [ ] [Binary Search Article](https://towardsdatascience.com/powerful-ultimate-binary-search-template-and-many-leetcode-problems-1f850ef95651)
 
    - [x] [Backtracking](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/)
 
