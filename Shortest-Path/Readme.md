@@ -44,6 +44,26 @@ static class Node implements Comparator<Node> {
 
 **BellmanFord**
 
+Explanation:
+Graph Class: Represents the graph with vertices, edges, and an array of Edge objects (edgeList).
+
+addEdge Method: Adds an edge to the graph by specifying the source, destination, and weight, and placing it in the edgeList.
+
+bellmanFord Method: Implements the Bellman-Ford algorithm:
+
+Initializes distances with Integer.MAX_VALUE and sets the distance to the start vertex to 0.
+
+Iterates vertices - 1 times, relaxing all edges in each iteration.
+
+Checks for negative weight cycles by iterating through all edges one more time. If a shorter path is found, it indicates a negative weight cycle.
+
+printSolution Method: Prints the shortest distances from the source to all vertices.
+
+Edge Class: Represents an edge in the graph with source, destination, and weight.
+
+main Method: Creates a sample graph, adds edges, and runs the Bellman-Ford algorithm from the specified start vertex.
+
+
 ```
 import java.util.Arrays;
 
