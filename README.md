@@ -37,6 +37,9 @@
 4. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
 5. Replication | Partitioning | Transaction - DDIA Book
 6. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
+7. Count Min Sketch Algo
+8. Paxos - Paxos Agreement - Computerphile ([video](https://www.youtube.com/watch?v=s8JqcZtvnsM))
+9. Hyperloglog Algorithm
 
 
 ## Practice Problems
