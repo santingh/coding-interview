@@ -34,6 +34,7 @@
 1. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
 2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
 3. Replication | Partitioning | Transaction - DDIA Book
+4. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
 
 
 ## Practice Problems
