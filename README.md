@@ -30,6 +30,11 @@
 6. [Sliding Window Patterns](https://lnkd.in/gvWBFGSa)
 7. [Graph Patterns](https://lnkd.in/gkj_JPnq)
   
+## Data Engineering Interview Prep
+1. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
+2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
+3. 
+
 
 ## Practice Problems
   
