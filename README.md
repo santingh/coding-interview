@@ -37,9 +37,10 @@
 4. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
 5. Replication | Partitioning | Transaction - DDIA Book
 6. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
-7. Count Min Sketch Algo
-8. Paxos - Paxos Agreement - Computerphile ([video](https://www.youtube.com/watch?v=s8JqcZtvnsM))
-9. Hyperloglog Algorithm
+7. [How LedgerStore Supports Trillions of Indexes at Uber](https://www.uber.com/en-IN/blog/how-ledgerstore-supports-trillions-of-indexes/)
+8. Count Min Sketch Algo
+9. Paxos - Paxos Agreement - Computerphile ([video](https://www.youtube.com/watch?v=s8JqcZtvnsM))
+10. Hyperloglog Algorithm
 
 
 ## Practice Problems
