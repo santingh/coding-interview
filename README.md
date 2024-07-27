@@ -32,18 +32,20 @@
   
 ## Data Engineering Interview Prep
 1. [SQL](https://www.youtube.com/watch?v=xrv1ODQgjck&list=PLOlK8ytA0Mgj4YDvzevQir35PieOswsFX&index=3)
-2. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
-3. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
-4. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
-5. [How to remove duplicates in large datasets](https://clevertap.com/blog/how-to-remove-duplicates-in-large-datasets/)
-6. [Unique ID GEnerator](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake)
-7. Distributed Resource Locking - Chubby 
-8. Replication | Partitioning | Transaction - DDIA Book
-9. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
-10. [How LedgerStore Supports Trillions of Indexes at Uber](https://www.uber.com/en-IN/blog/how-ledgerstore-supports-trillions-of-indexes/)
-11. Count Min Sketch Algo
-12. Paxos - Paxos Agreement - Computerphile ([video](https://www.youtube.com/watch?v=s8JqcZtvnsM))
-13. Hyperloglog Algorithm
+2. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
+3. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
+4. Replication | Partitioning | Transaction - DDIA Book
+5. Consensus Protocols
+6. Distributed Resource Locking Algorithms
+7. Conflict resolution Algorithms
+8. Hyperloglog Algorithm
+9. Count Min Sketch Algo
+11. [Unique ID GEnerator](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake)
+12. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
+13. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
+14. [How to remove duplicates in large datasets](https://clevertap.com/blog/how-to-remove-duplicates-in-large-datasets/)
+16. [How LedgerStore Supports Trillions of Indexes at Uber](https://www.uber.com/en-IN/blog/how-ledgerstore-supports-trillions-of-indexes/)
+17. Data Modeling Related System Design Problems
 
 
 ## Practice Problems
