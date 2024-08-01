@@ -21,22 +21,41 @@
    Deque<Character> stack = new LinkedList<>();
 ```
 
+5. **Find number of subarrays that fit an exact criteria**
 
-6. **Shortest Path**
+   ```
+      public int fn(int[] arr, int k) {
+         Map<Integer, Integer> counts = new HashMap<>();
+         counts.put(0, 1);
+         int ans = 0, curr = 0;
+     
+         for (int num: arr) {
+             // do logic to change curr
+             ans += counts.getOrDefault(curr - k, 0);
+             counts.put(curr, counts.getOrDefault(curr, 0) + 1);
+         }
+     
+         return ans;
+       }
+   ```
+
+   if not exact criteria then use sliding window
+
+7. **Shortest Path**
 
    1. BFS guarantees that you find the shortest path first because it explores nodes level by level
    2. While DFS can be used to find paths, it doesn't guarantee finding the shortest path, especially in graphs with weighted edges.
 
 
-7. **Cycle Detection**
+8. **Cycle Detection**
    
    DFS is more suitable for tasks like topological sorting, cycle detection, or searching for paths without concern for their length.
 
-8. **Disjoint Set(Union Find)**
+9. **Disjoint Set(Union Find)**
    
    The primary use of disjoint sets is to address the connectivity between the components of a network. The “network“ here can be a computer network or a social network. For instance, we can use a disjoint set to determine if two people share a common ancestor.
 
-9. **Binary Tree To Array**
+10. **Binary Tree To Array**
 
 ```
    parent = n/2
