@@ -193,3 +193,7 @@ public XYZ[] dc(XYZ[] xyz){
     - Works for non negative weights
     - Vertex based | Greedy Algo
     - O(E + VlogV)
+   
+18. **Topological Sort**
+
+19. **Minimum Spanning Tree**
