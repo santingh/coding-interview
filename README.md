@@ -81,6 +81,8 @@ Extra
 1. https://www.educative.io/courses/grokking-the-principles-and-practices-of-advanced-system-design
 2. https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
 3. https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course
+4. https://www.educative.io/courses/grokking-the-machine-learning-interview
+5. https://www.educative.io/courses/database-design-fundamentals
 
 **Technical Papers** :
 1. Google File System (GFS): https://lnkd.in/eVyZpQ98
