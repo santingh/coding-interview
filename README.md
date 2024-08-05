@@ -29,8 +29,10 @@
 5. [Binary Search Patterns](https://lnkd.in/gDHAi_Jk)
 6. [Sliding Window Patterns](https://lnkd.in/gvWBFGSa)
 7. [Graph Patterns](https://lnkd.in/gkj_JPnq)
+8. [Arrays Practise problems](https://www.geeksforgeeks.org/array-data-structure/?ref=shm)
+9. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
   
-## Data Engineering Interview Prep
+## System Design Interview Prep
 1. [SQL](https://www.youtube.com/watch?v=xrv1ODQgjck&list=PLOlK8ytA0Mgj4YDvzevQir35PieOswsFX&index=3)
 2. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
 3. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
@@ -47,28 +49,6 @@
 16. [How LedgerStore Supports Trillions of Indexes at Uber](https://www.uber.com/en-IN/blog/how-ledgerstore-supports-trillions-of-indexes/)
 17. Data Modeling Related System Design Problems
 
-
-## Practice Problems
-  
-[Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
-
-[Google Interview](https://leetcode.com/explore/interview/card/google/)
-
-Company Specific - [Google](https://leetcode.com/company/google/)
-
-[Arrays Practise problems](https://www.geeksforgeeks.org/array-data-structure/?ref=shm)
-
-Extra
-   https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode
-   
-   https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
-   
-   https://leetcode.com/discuss/interview-question/1563880/all-you-need-this-for-better-preparation
-   
-
-
-- [Meta Interview Guide](https://interviewing.io/guides/hiring-process/meta-facebook)
-- [Google Interview Guide](https://interviewing.io/guides/hiring-process/google#google)
 
 **System Design**
 
