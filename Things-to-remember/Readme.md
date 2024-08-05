@@ -197,3 +197,8 @@ public XYZ[] dc(XYZ[] xyz){
 18. **Topological Sort**
 
 19. **Minimum Spanning Tree**
+
+20. **Kadens Algorithm**
+
+21. **Monotonic Increasing Stack**
+22. 
