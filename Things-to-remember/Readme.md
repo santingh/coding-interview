@@ -200,5 +200,71 @@ public XYZ[] dc(XYZ[] xyz){
 
 20. **Kadens Algorithm**
 
-21. **Monotonic Increasing Stack**
-22. 
+21. **Monotonic Increasing Stack - Next Smaller**
+    ```
+    for(int i = l; i >= 0 ; i--){
+
+            while(!stack.isEmpty() && stack.peek() >= heights[i]){
+                stack.pop();
+            }
+
+            if(stack.isEmpty()){
+                nextSmaller[i] = l+1;
+            } else {
+                nextSmaller[i] = stack.peek();
+            }
+
+            stack.push(heights[i]);
+        }
+    ```
+22. **Monotonic Increasing Stack - Prev Smaller**
+    ```
+    for(int i = 0; i <= l ; i++){
+
+            while(!stack.isEmpty() && stack.peek() >= heights[i]){
+                stack.pop();
+            }
+
+            if(stack.isEmpty()){
+                prevSmaller[i] = 0;
+            } else {
+                prevSmaller[i] = stack.peek();
+            }
+
+            stack.push( heights[i]);
+        }
+    ```
+23. **Monotonic Decreasing Stack - Next Bigger**
+    ```
+    for(int i = l; i >= 0 ; i--){
+
+            while(!stack.isEmpty() && stack.peek() < heights[i]){
+                stack.pop();
+            }
+
+            if(stack.isEmpty()){
+                nextSmaller[i] = l+1;
+            } else {
+                nextSmaller[i] = stack.peek();
+            }
+
+            stack.push(heights[i]);
+        }
+    ```
+24. **Monotonic Decreasing Stack - Prev Bigger**
+    ```
+    for(int i = 0; i <= l ; i++){
+
+            while(!stack.isEmpty() && stack.peek() < heights[i]){
+                stack.pop();
+            }
+
+            if(stack.isEmpty()){
+                nextSmaller[i] = l+1;
+            } else {
+                nextSmaller[i] = stack.peek();
+            }
+
+            stack.push(heights[i]);
+        }
+    ```
