@@ -35,14 +35,15 @@
   
 ## System Design Interview Prep
 1. [SQL](https://www.youtube.com/watch?v=xrv1ODQgjck&list=PLOlK8ytA0Mgj4YDvzevQir35PieOswsFX&index=3)
-2. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
-3. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
-4. Replication | Partitioning | Transaction - DDIA Book
-5. Consensus Protocols
-6. Distributed Resource Locking Algorithms
-7. Conflict resolution Algorithms
-8. Hyperloglog Algorithm
-9. Count Min Sketch Algo
+2. [SQL Card](https://leetcode.com/explore/featured/card/sql-language/684/sql-relationship/)
+3. Concepts : Column Oriented DB, Hadoop - HDFS, Hive Windowing
+4. [Mastering Big Data with Apache Spark and Java](https://www.educative.io/courses/mastering-big-data-apache-spark-java-api)
+5. Replication | Partitioning | Transaction - DDIA Book
+6. Consensus Protocols
+7. Distributed Resource Locking Algorithms
+8. Conflict resolution Algorithms
+9. Hyperloglog Algorithm
+10. Count Min Sketch Algo
 11. [Unique ID GEnerator](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake)
 12. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
 13. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
