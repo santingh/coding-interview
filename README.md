@@ -22,15 +22,16 @@
    - [ ] [Trie](https://leetcode.com/explore/learn/card/trie/)
    
 ## Code Templates
-1. [Dynamic Programming Patterns](https://lnkd.in/gw3DR3xt)
-2. [Substring Problem Patterns](https://lnkd.in/gmkJymQV)
-3. [Backtracking Problem Patterns](https://lnkd.in/gpgevxXd)
-4. [Two Pointers Patterns](https://lnkd.in/gt2dSxJR)
-5. [Binary Search Patterns](https://lnkd.in/gDHAi_Jk)
-6. [Sliding Window Patterns](https://lnkd.in/gvWBFGSa)
-7. [Graph Patterns](https://lnkd.in/gkj_JPnq)
-8. [Arrays Practise problems](https://www.geeksforgeeks.org/array-data-structure/?ref=shm)
-9. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
+1. [Trees](https://leetcode.com/problemset/?topicSlugs=tree&page=1&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJESUZGSUNVTFRZIn1d&difficulty=HARD)
+2. [Dynamic Programming Patterns](https://lnkd.in/gw3DR3xt)
+3. [Substring Problem Patterns](https://lnkd.in/gmkJymQV)
+4. [Backtracking Problem Patterns](https://lnkd.in/gpgevxXd)
+5. [Two Pointers Patterns](https://lnkd.in/gt2dSxJR)
+6. [Binary Search Patterns](https://lnkd.in/gDHAi_Jk)
+7. [Sliding Window Patterns](https://lnkd.in/gvWBFGSa)
+8. [Graph Patterns](https://lnkd.in/gkj_JPnq)
+9. [Arrays Practise problems](https://www.geeksforgeeks.org/array-data-structure/?ref=shm)
+10. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
   
 ## System Design Interview Prep
 1. [SQL](https://www.youtube.com/watch?v=xrv1ODQgjck&list=PLOlK8ytA0Mgj4YDvzevQir35PieOswsFX&index=3)
