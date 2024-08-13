@@ -200,7 +200,22 @@ public XYZ[] dc(XYZ[] xyz){
 
 20. **Kadens Algorithm**
 
-21. **Monotonic Increasing Stack - Next Smaller**
+     ```
+     Initialize:
+         max_so_far = INT_MIN
+         max_ending_here = 0
+     
+     Loop for each element of the array
+     
+       (a) max_ending_here = max_ending_here + a[i]
+       (b) if(max_so_far < max_ending_here)
+                 max_so_far = max_ending_here
+       (c) if(max_ending_here < 0)
+                 max_ending_here = 0
+     return max_so_far
+     ```
+     
+22. **Monotonic Increasing Stack - Next Smaller**
     ```
     for(int i = l; i >= 0 ; i--){
 
@@ -217,7 +232,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push(heights[i]);
         }
     ```
-22. **Monotonic Increasing Stack - Prev Smaller**
+23. **Monotonic Increasing Stack - Prev Smaller**
     ```
     for(int i = 0; i <= l ; i++){
 
@@ -234,7 +249,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push( heights[i]);
         }
     ```
-23. **Monotonic Decreasing Stack - Next Bigger**
+24. **Monotonic Decreasing Stack - Next Bigger**
     ```
     for(int i = l; i >= 0 ; i--){
 
@@ -251,7 +266,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push(heights[i]);
         }
     ```
-24. **Monotonic Decreasing Stack - Prev Bigger**
+25. **Monotonic Decreasing Stack - Prev Bigger**
     ```
     for(int i = 0; i <= l ; i++){
 
