@@ -4,6 +4,18 @@
     id = (row * colCount + col); 
     row = id / colCount;
     col  = id % colCount;
+
+   // explore all four directions in matrix
+     int[][] directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+     int row = currPos / matrix[0].length;
+     int col = currPos % matrix[0].length;
+
+     for(int i = 0; i < 4; i++){
+         int newD = (currPos + i) % 4;
+
+         int newRow = row + directions[newD][0];
+         int newCol = col + directions[newD][1];
+     }
 ```
 
 
