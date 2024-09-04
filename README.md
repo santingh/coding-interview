@@ -37,9 +37,9 @@
 1. Replication | Partitioning | Transaction - DDIA Book
 2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
 3. [Advanced System Design](https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course)
-4. Consensus Protocols
+4. Consensus Algorithms
 5. Conflict resolution Algorithms
-6. Distributed Resource Locking Algorithms
+6. [Distributed Resource Locking Algorithms](https://igotanoffer.com/blogs/tech/leader-election-system-design-interview)
 7. Hyperloglog Algorithm
 8. Count Min Sketch Algo
 9. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
