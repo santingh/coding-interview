@@ -42,7 +42,8 @@
 8. Hyperloglog Algorithm
 9. Count Min Sketch Algo
 10. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
-11. [Meta SD - Revision](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) 
+11. [Meta SD Practise](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+12. [Common SD Problems Company Wise](https://igotanoffer.com/blogs/tech/system-design-interviews#questions)
 
 ## Behaviroural
 1. https://www.hellointerview.com/blog/ace-faang-behavioral-interview
