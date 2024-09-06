@@ -35,13 +35,11 @@
   
 ## System Design Interview Prep
 1. [Replication | Partitioning | Transaction | Consensus](https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf)
-2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
-3. [Advanced System Design](https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course)
 6. [Distributed Resource Locking Algorithms](https://igotanoffer.com/blogs/tech/leader-election-system-design-interview)
 7. [Why Redlock is not safe](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
 8. Hyperloglog Algorithm
 9. Count Min Sketch Algo
-10. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
+10. [Top K heavy Hitter & Others]([https://www.youtube.com/watch?v=kx-XDoPjoHw](https://www.youtube.com/@SystemDesignInterview))
 11. [Meta SD Practise](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 12. [Common SD Problems Company Wise](https://igotanoffer.com/blogs/tech/system-design-interviews#questions)
 
