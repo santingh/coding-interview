@@ -34,7 +34,7 @@
 10. [Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-hard/)
   
 ## System Design Interview Prep
-1. Replication | Partitioning | Transaction - DDIA Book
+1. [Replication | Partitioning | Transaction | Consensus](https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf)
 2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
 3. [Advanced System Design](https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course)
 4. Consensus Algorithms
