@@ -37,13 +37,12 @@
 1. [Replication | Partitioning | Transaction | Consensus](https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf)
 2. [System Design Interview Prep Crash Course](https://www.educative.io/courses/system-design-interview-prep-crash-course)
 3. [Advanced System Design](https://www.educative.io/courses/advanced-system-design-interview-prep-crash-course)
-4. Consensus Algorithms
-5. Conflict resolution Algorithms
 6. [Distributed Resource Locking Algorithms](https://igotanoffer.com/blogs/tech/leader-election-system-design-interview)
-7. Hyperloglog Algorithm
-8. Count Min Sketch Algo
-9. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
-10. [Meta SD - Revision](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) 
+7. [Why Redlock is not safe](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
+8. Hyperloglog Algorithm
+9. Count Min Sketch Algo
+10. [Top K heavy Hitter](https://www.youtube.com/watch?v=kx-XDoPjoHw)
+11. [Meta SD - Revision](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) 
 
 ## Behaviroural
 1. https://www.hellointerview.com/blog/ace-faang-behavioral-interview
