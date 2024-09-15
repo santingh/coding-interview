@@ -42,6 +42,7 @@
 10. [Top K heavy Hitter & Others]([https://www.youtube.com/watch?v=kx-XDoPjoHw](https://www.youtube.com/@SystemDesignInterview))
 11. [Meta SD Practise](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 12. [Common SD Problems Company Wise](https://igotanoffer.com/blogs/tech/system-design-interviews#questions)
+13. [Latest Meta SD](https://hackernoon.com/i-led-dozens-of-meta-system-design-interviews-heres-the-right-way-to-prep)
 
 ## Behaviroural
 1. https://www.hellointerview.com/blog/ace-faang-behavioral-interview
