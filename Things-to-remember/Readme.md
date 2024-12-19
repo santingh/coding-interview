@@ -209,8 +209,11 @@ public XYZ[] dc(XYZ[] xyz){
 18. **Topological Sort**
 
 19. **Minimum Spanning Tree**
+    Kruskal's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a graph, ensuring all vertices are connected with the minimum total edge weight.
 
-20. **Kadens Algorithm**
+
+
+21. **Kadens Algorithm**
 
      ```
      Initialize:
