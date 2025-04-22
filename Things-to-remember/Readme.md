@@ -53,6 +53,9 @@
 
    if not exact criteria then use sliding window
 
+   If your “metric” only ever goes up (or only down) as you slide, it’s monotonic → use the two‑pointer “atMost/Exactly” trick.
+Otherwise, it’s non‑monotonic → reach for prefix sums + hashing.
+
 7. **Shortest Path**
 
    1. BFS guarantees that you find the shortest path first because it explores nodes level by level
