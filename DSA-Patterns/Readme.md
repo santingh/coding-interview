@@ -103,3 +103,5 @@ Monotonic Stack → Next Greater / Smaller Element
 Greedy → Only when local optimum leads to global optimum 
 Trie → For prefix-based string problems
 
+![Alt text](1744697472288.jpeg?raw=true "Title")
+
