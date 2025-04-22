@@ -11,6 +11,7 @@ e.g. “Max sum of any subarray of length k.”
 Expand right, shrink left to maintain metric ≤ K.
 
 e.g. “Count subarrays with sum ≤ K.”
+
 Since this is non monotonic use Prefi-Sum + TreeMap approach(for exact K using HashMap)
 
 ### Variable‑Size “At Least K”
