@@ -3,77 +3,118 @@
 
 ### Fixed‑Size Window
 Slide a window of size k to compute sums, max/min, averages.
+
 e.g. “Max sum of any subarray of length k.”
+
 
 ### Variable‑Size “At Most K”
 Expand right, shrink left to maintain metric ≤ K.
+
 e.g. “Count subarrays with sum ≤ K.”
-Variable‑Size “At Least K”
+
+### Variable‑Size “At Least K”
 Expand until metric ≥ K, then shrink to find minimal length.
+
 e.g. “Shortest subarray with sum ≥ K.”
-Exactly K of Something
+
+### Exactly K of Something
 Use exactlyK = atMost(K) – atMost(K–1).
+
 e.g. “Exactly K distinct chars,” “Exactly K odds.”
-Min‑Window Substring
+
+### Min‑Window Substring
 Find the smallest window containing all required chars.
+
 e.g. LC 76 “Minimum Window Substring.”
-All‑Permutations in String
+
+### All‑Permutations in String
 Check sliding window for anagram match via freq‑arrays.
+
 e.g. LC 438 “Find All Anagrams in a String.”
-Longest/Shortest Substring with Constraints
+
+### Longest/Shortest Substring with Constraints
 e.g. “Longest substring with at most K distinct,” “Longest without repeating.”
-Sum/Avg under Constraint
+
+### Sum/Avg under Constraint
 e.g. “Max average subarray of length ≥ k.”
-Window with Dynamic Condition
+
+### Window with Dynamic Condition
 e.g. “Fruit into baskets” (at most 2 distinct), “Binary subarrays with sum = S.”
-↔️ Two‑Pointer Patterns
 
-Pair‑Sum in Sorted Array
+
+# Two‑Pointer Patterns
+
+### Pair‑Sum in Sorted Array
 Move l/r inward based on sum vs target.
+
 e.g. LC 167 “Two Sum II.”
-Container With Most Water
+
+### Container With Most Water
 l/r maximize area → move smaller inward.
+
 e.g. LC 11.
-3‑Sum / 4‑Sum
+
+### 3‑Sum / 4‑Sum
 Fix one (or two) pointers, use two‑pointer for remainder.
+
 e.g. LC 15 “3Sum.”
-Dutch National Flag / Partition
+
+### Dutch National Flag / Partition
 Three pointers to sort 0/1/2 or partition by pivot.
+
 e.g. LC 75 “Sort Colors.”
-In‑Place Removal / Duplication
+
+### In‑Place Removal / Duplication
 Overwrite unwanted values as you scan with two pointers.
+
 e.g. LC 26 “Remove Duplicates from Sorted Array.”
-Merging Sorted Arrays
+
+### Merging Sorted Arrays
 Tail‑to‑head merge with two pointers.
+
 e.g. “Merge two sorted lists/arrays.”
-Linked List Fast & Slow
+
+### Linked List Fast & Slow
 Find middle / detect cycle / remove nth from end.
+
 e.g. LC 876 “Middle of the Linked List,” LC 142 “Cycle II.”
-Reversal
+
+### Reversal
 Reverse array/string in‑place by swapping l++, r––.
+
 e.g. “Reverse Words in a String.”
-⚡ Kadane’s & Extensions
 
-Classic Kadane’s
+# Kadane’s & Extensions
+
+### Classic Kadane’s
 Track currentMax = max(num, currentMax+num) → global max.
+
 e.g. “Maximum Subarray” (LC 53).
-Max Product Subarray
+
+### Max Product Subarray
 Keep both min/max at each step (sign flips).
+
 e.g. LC 152.
-Circular Subarray Sum
+
+### Circular Subarray Sum
 max( standardKadane, totalSum − minSubarray ).
+
 e.g. LC 918 “Max Circular Subarray.”
-One Deletion Allowed
+
+### One Deletion Allowed
 DP with two states: with/without deletion.
+
 e.g. LC 1186 “Maximum Subarray Sum with One Deletion.”
-Max Average Subarray
+
+### Max Average Subarray
 Binary‑search on answer + sliding‑window check.
+
 e.g. “Max average subarray of length ≥ k.”
-Max Sum with Constraints
+
+### Max Sum with Constraints
 Combine Kadane’s with deque for windowed constraints.
+
 e.g. LC 1425 “Constrained Subsequence Sum.”
-
-
 
 
 **Practise Problems**
