@@ -19,6 +19,13 @@ Expand until metric ≥ K, then shrink to find minimal length.
 
 e.g. “Shortest subarray with sum ≥ K.”
 
+***When to Reach for a Monotonic Deque***
+
+1. Sliding-window max/min
+2. “Shortest ≥ K” or “Longest ≤ K” style prefix‐sum problems
+
+Any time you need the best candidate at the window’s front, and adding/removing preserves a single-direction order
+
 ### Exactly K of Something
 Use exactlyK = atMost(K) – atMost(K–1).
 
