@@ -24,6 +24,8 @@ Use exactlyK = atMost(K) – atMost(K–1).
 
 e.g. “Exactly K distinct chars,” “Exactly K odds.”
 
+Since this is non cummulative or its monotonic, so use sliding window. 
+
 ### Min‑Window Substring
 Find the smallest window containing all required chars.
 
