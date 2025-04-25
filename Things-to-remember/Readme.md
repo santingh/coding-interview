@@ -219,6 +219,18 @@ public XYZ[] dc(XYZ[] xyz){
 
 21. **Kadens Algorithm**
 
+    ***Pattern Highlights***
+      Classic Kadane’s keeps a running curr max and a global best.
+    
+      Max Product tracks both maxProd and minProd to handle sign flips.
+    
+      Circular Sum combines standard Kadane’s with an “invert‐and‐run” to find the minimum subarray.
+    
+      One Deletion uses two passes (forward/backward) and then tries removing each element by joining the two segments.
+    
+      Constrained Sum uses a deque to query the maximum dp[j] within the last k positions in O(1).
+    
+
      ```
            public class KadanePatterns {
        
@@ -319,7 +331,7 @@ public XYZ[] dc(XYZ[] xyz){
 
      ```
      
-22. **Monotonic Increasing Stack - Next Smaller**
+23. **Monotonic Increasing Stack - Next Smaller**
     ```
     for(int i = l; i >= 0 ; i--){
 
@@ -336,7 +348,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push(heights[i]);
         }
     ```
-23. **Monotonic Increasing Stack - Prev Smaller**
+24. **Monotonic Increasing Stack - Prev Smaller**
     ```
     for(int i = 0; i <= l ; i++){
 
@@ -353,7 +365,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push( heights[i]);
         }
     ```
-24. **Monotonic Decreasing Stack - Next Bigger**
+25. **Monotonic Decreasing Stack - Next Bigger**
     ```
     for(int i = l; i >= 0 ; i--){
 
@@ -370,7 +382,7 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push(heights[i]);
         }
     ```
-25. **Monotonic Decreasing Stack - Prev Bigger**
+26. **Monotonic Decreasing Stack - Prev Bigger**
     ```
     for(int i = 0; i <= l ; i++){
 
@@ -388,7 +400,7 @@ public XYZ[] dc(XYZ[] xyz){
         }
     ```
 
-26. **Fast and Slow Pointer**
+27. **Fast and Slow Pointer**
     ```
             
         class ListNode {
