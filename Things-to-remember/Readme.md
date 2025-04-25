@@ -220,18 +220,103 @@ public XYZ[] dc(XYZ[] xyz){
 21. **Kadens Algorithm**
 
      ```
-     Initialize:
-         max_so_far = INT_MIN
-         max_ending_here = 0
-     
-     Loop for each element of the array
-     
-       (a) max_ending_here = max_ending_here + a[i]
-       (b) if(max_so_far < max_ending_here)
-                 max_so_far = max_ending_here
-       (c) if(max_ending_here < 0)
-                 max_ending_here = 0
-     return max_so_far
+           public class KadanePatterns {
+       
+           /** 1. Classic Kadane’s: Maximum Subarray Sum */
+           public int maxSubArray(int[] nums) {
+               int best = nums[0];
+               int curr = nums[0];
+               for (int i = 1; i < nums.length; i++) {
+                   // either extend previous or start anew at nums[i]
+                   curr = Math.max(nums[i], curr + nums[i]);
+                   best = Math.max(best, curr);
+               }
+               return best;
+           }
+       
+           /** 2. Max Product Subarray: track both max and min */
+           public int maxProduct(int[] nums) {
+               int maxProd = nums[0], minProd = nums[0], ans = nums[0];
+               for (int i = 1; i < nums.length; i++) {
+                   int x = nums[i];
+                   // if x is negative, swap maxProd & minProd before multiplying
+                   if (x < 0) {
+                       int tmp = maxProd;
+                       maxProd = minProd;
+                       minProd = tmp;
+                   }
+                   maxProd = Math.max(x, maxProd * x);
+                   minProd = Math.min(x, minProd * x);
+                   ans = Math.max(ans, maxProd);
+               }
+               return ans;
+           }
+       
+           /** 3. Circular Subarray Sum */
+           public int maxSubarraySumCircular(int[] nums) {
+               int total = 0;
+               int maxKadane = nums[0], minKadane = nums[0];
+               int currMax = 0, currMin = 0;
+               for (int x : nums) {
+                   currMax = Math.max(x, currMax + x);
+                   maxKadane = Math.max(maxKadane, currMax);
+                   currMin = Math.min(x, currMin + x);
+                   minKadane = Math.min(minKadane, currMin);
+                   total += x;
+               }
+               // if all negative, maxKadane is the answer
+               if (maxKadane < 0) return maxKadane;
+               // otherwise, max of standard or wrap-around
+               return Math.max(maxKadane, total - minKadane);
+           }
+       
+           /** 4. Max Subarray Sum with One Deletion Allowed */
+           public int maxSubarrayWithOneDeletion(int[] arr) {
+               int n = arr.length;
+               int[] fwd = new int[n];  // max ending at i
+               int[] bwd = new int[n];  // max starting at i
+               fwd[0] = arr[0];
+               for (int i = 1; i < n; i++)
+                   fwd[i] = Math.max(arr[i], fwd[i-1] + arr[i]);
+               bwd[n-1] = arr[n-1];
+               for (int i = n-2; i >= 0; i--)
+                   bwd[i] = Math.max(arr[i], bwd[i+1] + arr[i]);
+               int ans = fwd[0];
+               for (int i = 1; i < n; i++)
+                   ans = Math.max(ans, fwd[i]);  // no deletion
+               for (int i = 1; i < n-1; i++)
+                   // delete arr[i], combine fwd[i-1] + bwd[i+1]
+                   ans = Math.max(ans, fwd[i-1] + bwd[i+1]);
+               return ans;
+           }
+       
+           /** 5. Constrained Subsequence Sum (LC 1425) */
+           public int constrainedSubsetSum(int[] nums, int k) {
+               int n = nums.length, ans = nums[0];
+               int[] dp = new int[n];
+               dp[0] = nums[0];
+               // deque stores indices of dp in decreasing order of dp[]
+               Deque<Integer> dq = new ArrayDeque<>();
+               dq.offerLast(0);
+       
+               for (int i = 1; i < n; i++) {
+                   // remove indices out of window [i-k, i-1]
+                   while (!dq.isEmpty() && dq.peekFirst() < i - k) {
+                       dq.pollFirst();
+                   }
+                   // best we can extend is dp[dq.peekFirst()]
+                   dp[i] = Math.max(nums[i], nums[i] + dp[dq.peekFirst()]);
+                   ans = Math.max(ans, dp[i]);
+                   // maintain deque in decreasing dp[] order
+                   while (!dq.isEmpty() && dp[i] >= dp[dq.peekLast()]) {
+                       dq.pollLast();
+                   }
+                   dq.offerLast(i);
+               }
+               return ans;
+           }
+       }
+
      ```
      
 22. **Monotonic Increasing Stack - Next Smaller**
