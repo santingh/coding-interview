@@ -302,3 +302,42 @@ public XYZ[] dc(XYZ[] xyz){
             stack.push(heights[i]);
         }
     ```
+
+26. **Fast and Slow Pointer**
+    ```
+            
+        class ListNode {
+            int val;
+            ListNode next;
+            ListNode(int x) { val = x; }
+        }
+        
+        public class Solution {
+            public ListNode fastSlowTemplate(ListNode head) {
+                // 1) Initialize both pointers at the start
+                ListNode slow = head;
+                ListNode fast = head;
+        
+                // 2) Advance fast by two and slow by one
+                //    until fast hits the end (or condition triggered)
+                while (fast != null && fast.next != null) {
+                    slow = slow.next;          // move slow by 1
+                    fast = fast.next.next;     // move fast by 2
+        
+                    // —— Optional cycle check ——
+                    // if (slow == fast) {
+                    //     // cycle detected
+                    //     break;
+                    // }
+                }
+        
+                // 3) After the loop:
+                //    • For finding the middle: 'slow' is at mid.
+                //    • For cycle detection: check slow == fast.
+                //    • For cycle entry: reset fast=head, then
+                //      while(slow != fast){ slow=slow.next; fast=fast.next; }
+        
+                return slow;
+            }
+        }
+ ```
