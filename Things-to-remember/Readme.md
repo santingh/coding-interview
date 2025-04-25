@@ -220,6 +220,7 @@ public XYZ[] dc(XYZ[] xyz){
 21. **Kadens Algorithm**
 
     ***Pattern Highlights***
+    
       Classic Kadane’s keeps a running curr max and a global best.
     
       Max Product tracks both maxProd and minProd to handle sign flips.
