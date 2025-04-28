@@ -10,17 +10,26 @@ e.g. “Max sum of any subarray of length k.”
 ### Exactly / Atmost / Atleast for Monotonic vs Non Monotonic Metric
 **Monotonic Metric**
   Positive ints / Odd count etc
+  
   Atmost : Sliding Window + 2P - O(n)
+  
     eg: Count / longest sum <= k;
 
+    
+
   Exact K  : Atmost(k) - Atmost(k-1) : O(n)
+  
 
 **Non Monotonic Metric**
 Any ints
+
 Exact K : HashMap : O(n)
 
+
 Atmost K : TreeMap.tailMap (consider all values < sum - k) : nLogn
+
 Note : We write cummilative Sum and check for cummSum - K in map. 
+
 
 ***When to Reach for a Monotonic Deque***
 
