@@ -7,17 +7,20 @@ Slide a window of size k to compute sums, max/min, averages.
 e.g. “Max sum of any subarray of length k.”
 
 
-### Variable‑Size “At Most K”
-Expand right, shrink left to maintain metric ≤ K.
+### Exactly / Atmost / Atleast for Monotonic vs Non Monotonic Metric
+**Monotonic Metric**
+  Positive ints / Odd count etc
+  Atmost : Sliding Window + 2P - O(n)
+    eg: Count / longest sum <= k;
 
-e.g. “Count subarrays with sum ≤ K.”
+  Exact K  : Atmost(k) - Atmost(k-1) : O(n)
 
-Since this is non monotonic use Prefi-Sum + TreeMap approach(for exact K using HashMap)
+**Non Monotonic Metric**
+Any ints
+Exact K : HashMap : O(n)
 
-### Variable‑Size “At Least K”
-Expand until metric ≥ K, then shrink to find minimal length.
-
-e.g. “Shortest subarray with sum ≥ K.”
+Atmost K : TreeMap.tailMap (consider all values < sum - k) : nLogn
+Note : We write cummilative Sum and check for cummSum - K in map. 
 
 ***When to Reach for a Monotonic Deque***
 
@@ -26,12 +29,6 @@ e.g. “Shortest subarray with sum ≥ K.”
 
 Any time you need the best candidate at the window’s front, and adding/removing preserves a single-direction order
 
-### Exactly K of Something
-Use exactlyK = atMost(K) – atMost(K–1).
-
-e.g. “Exactly K distinct chars,” “Exactly K odds.”
-
-Since this is non cummulative or its monotonic, so use sliding window. 
 
 ### Min‑Window Substring
 Find the smallest window containing all required chars.
