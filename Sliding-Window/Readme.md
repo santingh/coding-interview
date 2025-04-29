@@ -7,34 +7,59 @@ Slide a window of size k to compute sums, max/min, averages.
 e.g. “Max sum of any subarray of length k.”
 
 
-### Exactly / Atmost / Atleast for Monotonic vs Non Monotonic Metric
-**Monotonic Metric**
-  Positive ints / Odd count etc
+### Non Monotonic Metric
+
+**Exactly K : O(n)**
+
+	- PrefixSum + HashMap
+ 
+	- map.get(sum - k)
+ 
+	- map.put(sum)
+ 
+	
+
+**AtMost K : nLogn**
+
+	- PrefixSum + TreeMap
+ 
+	- sum of map.tailMap(sum - k).values()
+ 
+
+**At least K : nLogn**
+
+	- PrefixSum + TreeMap
+ 
+	- sum of map.headMap(sum-k).values()
+ 
+	- or (totalSubarrays - atmost(k-1))
+ 
   
-  Atmost : Sliding Window + 2P - O(n)
-  
-    eg: Count / longest sum <= k;
 
-    
+### Monotonic Metric
 
-  Exact K  : Atmost(k) - Atmost(k-1) : O(n)
-  
+**Exactly K : O(n)**
 
-**Non Monotonic Metric**
-Any ints
+	- atmost(k) - atmost(k-1) 
+ 
+	
+**AtMost K : O(n)**
 
-Exact K : HashMap : O(n)
+	- sliding-window + 2P
 
 
-Atmost K : TreeMap.tailMap (consider all values < sum - k) : nLogn
+**At least K : O(n)**
 
-Note : We write cummilative Sum and check for cummSum - K in map. 
+	- (totalSubarrays - atmost(k-1))
+ 
 
 
-***When to Reach for a Monotonic Deque***
+### Monotonic Deque
 
 1. Sliding-window max/min
+   
 2. “Shortest ≥ K” or “Longest ≤ K” style prefix‐sum problems
+3. 
 
 Any time you need the best candidate at the window’s front, and adding/removing preserves a single-direction order
 
