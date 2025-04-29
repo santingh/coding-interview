@@ -91,6 +91,68 @@ Suggested Practice Roadmap
   - Finally, tackle 1499 (“value of equation”) to see the same deque idea applied on a transformed sequence.
 
 
+Extra Arrays Practise Problem:
+1. Two-Pointer on Sorted (or Nearly-Sorted) Arrays
+
+  Pattern: move pointers inwards or outwards to find pairs/triples with a target
+  Problems to try:
+    11. Container With Most Water
+    3Sum (and its k-Sum generalizations)
+    3Sum Closest
+    4Sum
+
+2. Prefix-Sum + Hash‌‌Map for Equality/Count
+
+  Pattern: store counts or first-occurrence of prefix sums in a map to get O(1) lookups
+  Problems to try:
+    560. Subarray Sum Equals K
+    560 variant : Count of subarrays sum = K (just return counts)
+    Continuous Subarray Sum (multiple of K)
+    Count Number of Nice Subarrays (odd-even pattern)
+
+3. Binary-Search in an Array Context
+
+  Pattern: either search a rotated/sorted array or binary-search the answer (e.g. splitting)
+  Problems to try:
+    33. Search in Rotated Sorted Array
+    Search in Rotated Sorted Array II (with duplicates)
+    Find Minimum in Rotated Sorted Array II
+    Split Array Largest Sum (binary-search the max-subarray threshold)
+
+4. DP on 1D Arrays
+
+  Pattern: build up solutions index by index for max/min/path-count
+  Problems to try:
+    198. House Robber (linear DP)
+    Best Time to Buy and Sell Stock with Cooldown
+    Coin Change (min-coins to make amount)
+    Longest Increasing Subsequence (O(n log n) patience solution)
+
+
+5. Selection & Top-K with Heaps / Quickselect
+
+  Pattern: use a heap or in-place partition to find k-th element or top-k elements
+  Problems to try:
+    215. Kth Largest Element in an Array (quickselect)
+    Top K Frequent Elements (heap or bucket sort)
+    Kth Smallest Element in a Sorted Matrix (heap + pointers)
+
+6. Bitwise-Xor & Masking Tricks
+
+  Pattern: use XOR to cancel out pairs, or bit-DP to encode subsets
+  Problems to try:
+    136. Single Number
+    Single Number III (two distinct singles)
+    Single Number II (every other appears three times)
+    Subarrays with Bitwise OR Equal K
+
+7. Matrix & 2D-Prefix-Sum Extensions
+
+  Pattern: extend prefix-sum logic into two dimensions
+  Problems to try:
+    363. Max Sum of Rectangle No Larger Than K
+    Range Sum Query 2D – Immutable
+    Maximal Square (DP on grid)
 
 Day 6 Advanced DP (Interval, Digit, Tree/Matrix)
 Trick: interval DP, binary‐search + DP, memoized DFS on grids/trees
