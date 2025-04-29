@@ -41,6 +41,55 @@ LC 239 – Sliding Window Maximum
 LC 218 – The Skyline Problem
 LC 295 – Find Median from Data Stream
 
+Monotonic Dequeue problems
+1. Sliding-Window Extrema
+
+  Pattern: Maintain a monotonic deque to get max or min in O(1) per step
+
+  239. Sliding Window Maximum (classic max in fixed K window)
+
+  1343. Number of Sub-arrays of Size K and Average ≥ Threshold (variant: count windows by checking their min via deque)
+
+2. Shortest ≥ K & Longest ≤ K (Prefix-Sum + Deque)
+
+  862. Shortest Subarray with Sum ≥ K (we’ve done this)
+
+  962. Maximum Width Ramp (same two-pass deque trick to maximize j–i with A[i] ≤ A[j])
+
+  1438. Longest Continuous Subarray With Absolute Diff ≤ Limit (use two deques: one increasing, one decreasing, to maintain max–min ≤ limit)
+
+3. “At Most / At Least K” with Monotonic Two-Deque
+
+Pattern: Two deques (or deques + count) to maintain both window max & min
+
+  480. Sliding Window Median (hard: balance two heaps or two multisets; analogous monotonic-structure practice)
+
+  713. Subarray Product Less Than K (two-pointer but monotonic insights help)
+
+  992. Subarrays with K Different Integers (at-most K & at-most K−1 double-window trick)
+
+4. Maximum-Value Equations & Prefix-Sum + Deque
+
+  1499. Max Value of Equation (deque on transformed values y−x)
+
+  1851. Minimum Interval to Include Each Query (sort by right end + min-heap/deque of left ends)
+
+5. Advanced Prefix-Sum Counting (for contrast)
+
+(Not deque, but good to compare)
+
+  325. Maximum Size Subarray Sum Equals K (hash-map of prefix sums)
+
+  930. Binary Subarrays With Sum = S (two-pointer / prefix count)
+
+  1248. Count Number of Nice Subarrays (odd-even counting via prefix)
+
+Suggested Practice Roadmap
+  - Re-implement 862 & 962 from scratch until you can write them in 15 minutes.
+  - Mix in the two-deque “max–min ≤ limit” (1438) to see how you juggle two monotonic structures.
+  - Contrast with the hash-map counting problems (325, 930) to appreciate why deque only works when you only need one best window, not counts.
+  - Finally, tackle 1499 (“value of equation”) to see the same deque idea applied on a transformed sequence.
+
 
 
 Day 6 Advanced DP (Interval, Digit, Tree/Matrix)
