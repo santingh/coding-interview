@@ -228,3 +228,44 @@
 7. **Matrix & 2D-Prefix-Sum Extensions**  
    - Pattern: extend prefix-sum logic into 2D  
    - LC 363, LC 304, LC 221
+
+
+
+# 📚 LeetCode String & Substring Problems
+
+A curated list of classic LeetCode problems focused on string- and substring-based algorithms, organized by core technique.
+
+---
+
+## 🚀 Dynamic Programming (DP)
+
+| Problem                                 | #   | Description                                           |
+| --------------------------------------- | --- | ----------------------------------------------------- |
+| **[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)**  | 5   | Find the longest palindromic substring in a given string. |
+| **[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)**               | 647 | Count all palindromic substrings in a string.         |
+| **[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)** | 516 | Find the longest palindromic subsequence.             |
+| **[Edit Distance](https://leetcode.com/problems/edit-distance/)**                                 | 72  | Compute minimum operations (insert/replace/delete) to convert one string into another. |
+| **[Word Break](https://leetcode.com/problems/word-break/)**                                       | 139 | Determine if a string can be segmented into dictionary words. |
+| **[Word Break II](https://leetcode.com/problems/word-break-ii/)**                                 | 140 | Return all valid segmentations of a string into dictionary words. |
+| **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)**                 | 115 | Count distinct ways to form one string as a subsequence of another. |
+| **[Interleaving String](https://leetcode.com/problems/interleaving-string/)**                     | 97  | Check if a string is formed by interleaving two others. |
+| **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)**     | 10  | Implement regex with `.` and `*` support.             |
+| **[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)**                         | 44  | Implement wildcard `?` and `*` pattern matching.      |
+
+---
+
+## 🧩 Backtracking
+
+| Problem                                 | #   | Description                                           |
+| --------------------------------------- | --- | ----------------------------------------------------- |
+| **[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)**             | 131 | Partition a string so that every substring is a palindrome. |
+| **[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)**                   | 93  | Generate all valid IP address combinations.           |
+| **[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)**             | 784 | Return all strings by toggling letter-case.           |
+| **[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)**                   | 22  | Generate all combinations of well-formed parentheses.  |
+| **[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)**           | 282 | Insert `+`, `-`, `*` to form target expressions.       |
+| **[Word Search](https://leetcode.com/problems/word-search/)**                                     | 79  | Find if a word exists in a 2D character grid.         |
+| **[Word Search II](https://leetcode.com/problems/word-search-ii/)**                               | 212 | Find all words from a list in a 2D grid.              |
+| **[Word Squares](https://leetcode.com/problems/word-squares/)**                                   | 425 | Build square arrays of words that read the same horizontally and vertically. |
+
+---
+
