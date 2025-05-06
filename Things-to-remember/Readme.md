@@ -308,6 +308,37 @@ class Solution {
 }
 ```
 
+## 23. House Robber III - Tree DP
+
+
+**Problem:**
+You’re given a binary tree of non-negative values. You want to maximize the sum of robbed node values, but you cannot rob two directly linked houses (parent & child).
+
+---
+
+**State Definition (per node):**
+
+* **dp$0$** = max you can rob in this subtree **if you DON’T rob** this node
+* **dp$1$** = max you can rob in this subtree **if you DO rob** this node
+
+**Recurrence (post-order):**
+
+```
+dp[1] = node.val + left.dp[0] + right.dp[0]
+dp[0] = max(left.dp[0], left.dp[1]) + max(right.dp[0], right.dp[1])
+```
+
+**Answer:**
+
+```
+result = max(root.dp[0], root.dp[1])
+```
+
+**Complexity:**
+
+* **Time:** O(n) — each node visited once
+* **Space:** O(h) recursion stack (h = tree height)
+
 ---
 
 > *Keep this cheat sheet handy when tackling common interview or contest problems!*
