@@ -374,5 +374,25 @@ minCameraCover = dpRoot[1]
 * **Time:** O(n) — one DFS
 * **Space:** O(h) — recursion stack (h=tree height)
 
+---
+
+
+## 25. Lowest Common Ancestor (Binary Tree)
+
+---
+**Both sides non-null**
+
+left found one target, right found the other → curr is the LCA.
+
+**One side non-null**
+
+Both targets lie in that one subtree (or it is itself p/q) → pass that non-null up.
+
+**Both null**
+
+Neither target here → return null.
+
+
+---
 
 > *Keep this cheat sheet handy when tackling common interview or contest problems!*
