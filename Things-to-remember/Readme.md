@@ -379,7 +379,6 @@ minCameraCover = dpRoot[1]
 
 ## 25. Lowest Common Ancestor (Binary Tree)
 
----
 **Both sides non-null**
 
 left found one target, right found the other → curr is the LCA.
