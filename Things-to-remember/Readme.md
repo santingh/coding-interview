@@ -341,4 +341,38 @@ result = max(root.dp[0], root.dp[1])
 
 ---
 
+## 24. place minimum cameras so that every node is monitored
+
+**Problem:** place minimum cameras so that every node is monitored (a camera covers its parent, itself, and its immediate children).
+
+**States (per node):**
+
+* `dp[0]` = cameras if **you place** one here
+* `dp[1]` = cameras if **you’re covered** (by one child) but **don’t place** one here
+* `dp[2]` = cameras if **you’re not covered** (parent must cover you)
+
+**Recurrence (post-order):**
+
+```
+dp[0] = 1 + minAll(L) + minAll(R)
+dp[2] = L[1] + R[1]
+dp[1] = min(
+           dp[0],
+           L[0] + min(L-covered of R),
+           R[0] + min(R-covered of L)
+         )
+```
+
+**Answer:**
+
+```
+minCameraCover = dpRoot[1]
+```
+
+**Complexity:**
+
+* **Time:** O(n) — one DFS
+* **Space:** O(h) — recursion stack (h=tree height)
+
+
 > *Keep this cheat sheet handy when tackling common interview or contest problems!*
