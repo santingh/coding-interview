@@ -14,6 +14,7 @@
 #### At Most K – O(n log n)
 - Prefix-Sum + TreeMap  
 - `sum(map.tailMap(sum - k).values())`
+- Usecase: count subarrays
 
 #### At Least K – O(n log n)
 - Prefix-Sum + TreeMap  
