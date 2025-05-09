@@ -2,7 +2,10 @@
 
 ### Fixed-Size Window
 - Slide a window of size k to compute sums, max/min, averages.  
-  _e.g._ “Max sum of any subarray of length k.”
+  _e.g._ “Max sum of any subarray of length k.” or "Subarrays of Size k and Average ≥ Threshold (LeetCode 1343)"
+
+
+Use below techniques for variable length window. 
 
 ### Non-Monotonic Metric
 
