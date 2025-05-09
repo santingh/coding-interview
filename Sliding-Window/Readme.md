@@ -3,6 +3,8 @@
 ### Fixed-Size Window
 - Slide a window of size k to compute sums, max/min, averages.  
   _e.g._ “Max sum of any subarray of length k.” or "Subarrays of Size k and Average ≥ Threshold (LeetCode 1343)"
+  - Sliding Window Median (LeetCode 480)
+  - Sliding Window Maximum (LeetCode 239)
 
 
 Use below techniques for variable length window. 
