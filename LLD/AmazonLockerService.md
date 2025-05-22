@@ -1,0 +1,69 @@
+# Amazon Locker Service
+
+## 1. High-Level Requirements
+
+### Functional
+- **Deposit**:  
+  - Delivery agent requests an available locker  
+  - System assigns a locker and generates a one-time access code  
+  - Recipient is notified with locker number and code  
+- **Pickup**:  
+  - User submits access code  
+  - System validates code, unlocks locker, and marks it free  
+- **Status & Monitoring**:  
+  - Track locker states (Free, Occupied, Expired)  
+  - Expose metrics for dashboards and alerts  
+- **Expiration / Cleanup**:  
+  - If package isn’t picked up within TTL (e.g. 24 hrs), auto-release locker and notify user  
+
+### Non-Functional
+- **Concurrency**: Handle thousands of simultaneous requests without double-allocation  
+- **Scalability**: Horizontally scale across regions  
+- **Availability**: ≥ 99.9 % uptime  
+- **Security**: Unforgeable, time-limited access codes; audit logging  
+- **Low Latency**: Sub-100 ms for assignment and validation  
+
+---
+
+## 2. Hint of Major Trick
+
+Use a **per-locker `ReentrantLock`** (stored in a `ConcurrentHashMap<LockerID, Locker>`) to guard all state transitions (assign, open, release). Maintain a central `LinkedBlockingQueue<Locker>` of free lockers. Schedule a cleanup task via `ScheduledExecutorService` to auto-release expired holds.
+
+---
+
+## 3. High-Level UML / Class Diagram
+
+```mermaid
+classDiagram
+    class LockerService {
+        + depositPackage(pkgId: String, userId: String)
+        + pickupPackage(accessCode: String)
+    }
+    class Locker {
+        - id: int
+        - occupied: boolean
+        - accessCode: String
+        - lock: ReentrantLock
+        + assign(code: String): boolean
+        + open(code: String): boolean
+        + release(): void
+    }
+    class CodeGenerator {
+        + generate(): String
+    }
+    class NotificationService {
+        + notifyUser(userId: String, message: String): void
+    }
+    class ScheduledExecutorService
+    class PackageInfo {
+        - id: String
+        - userId: String
+        - timestamp: Instant
+    }
+
+    LockerService "1" o-- "*" Locker
+    LockerService ..> CodeGenerator
+    LockerService ..> NotificationService
+    LockerService ..> ScheduledExecutorService
+    LockerService ..> PackageInfo
+```
