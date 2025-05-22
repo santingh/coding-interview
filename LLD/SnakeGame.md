@@ -213,3 +213,107 @@ enum Direction {
     UP, DOWN, LEFT, RIGHT
 }
 ```
+
+### Test
+```java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class SnakeGameTest {
+
+    // --------- Point Tests ---------
+
+    @Test
+    void testPointEqualsAndHashCode() {
+        Point p1 = new Point(2, 3);
+        Point p2 = new Point(2, 3);
+        Point p3 = new Point(3, 2);
+
+        assertEquals(p1, p2, "Points with same coords should be equal");
+        assertEquals(p1.hashCode(), p2.hashCode(),
+                     "Equal points must have same hashCode");
+        assertNotEquals(p1, p3, "Different coords => not equal");
+    }
+
+    @Test
+    void testGetNextPoint() {
+        Point origin = new Point(5, 5);
+        assertEquals(new Point(4, 5), origin.getNextPoint(Direction.UP));
+        assertEquals(new Point(6, 5), origin.getNextPoint(Direction.DOWN));
+        assertEquals(new Point(5, 4), origin.getNextPoint(Direction.LEFT));
+        assertEquals(new Point(5, 6), origin.getNextPoint(Direction.RIGHT));
+    }
+
+    // --------- Snake Tests ---------
+
+    @Test
+    void testSnakeInitialState() {
+        Point start = new Point(0, 0);
+        Snake snake = new Snake(start);
+        assertEquals(start, snake.getHead(), "Head should be at init point");
+        assertTrue(snake.isBody(start), "Body set should contain the start");
+    }
+
+    @Test
+    void testSnakeMove() {
+        Snake snake = new Snake(new Point(2, 2));
+        snake.move(Direction.RIGHT);
+        assertEquals(new Point(2, 3), snake.getHead(),
+                     "After moving RIGHT, head col should +1");
+        // Tail should have moved too, so body size remains 1
+        assertFalse(snake.isBody(new Point(2, 2)),
+                    "Old head shouldn't remain in body after move");
+    }
+
+    @Test
+    void testSnakeGrow() {
+        Snake snake = new Snake(new Point(2, 2));
+        snake.move(Direction.RIGHT);      // to (2,3)
+        snake.grow(Direction.DOWN);       // to (3,3)
+        assertEquals(new Point(3, 3), snake.getHead(),
+                     "After grow, head at new point");
+        // Body should now contain both (2,3) and (2,2)
+        assertTrue(snake.isBody(new Point(2, 3)));
+        assertTrue(snake.isBody(new Point(2, 2)));
+    }
+
+    @Test
+    void testSnakeSelfCollisionDetection() {
+        // Build a U-shape: start (2,2) → RIGHT → DOWN → LEFT
+        Snake snake = new Snake(new Point(2, 2));
+        snake.grow(Direction.RIGHT);  // (2,3)
+        snake.grow(Direction.DOWN);   // (3,3)
+        snake.grow(Direction.LEFT);   // (3,2)
+        // Next UP would hit the original head at (2,2)
+        Point collisionPoint = snake.getHead().getNextPoint(Direction.UP);
+        assertTrue(snake.isBody(collisionPoint),
+                   "Next move should collide with body");
+    }
+
+    // --------- Board Tests ---------
+
+    @Test
+    void testBoardCollision() {
+        Board board = new Board(3, 4); // rows=3 (0–2), cols=4 (0–3)
+        assertTrue(board.isCollision(new Point(-1, 0)));
+        assertTrue(board.isCollision(new Point(0, -1)));
+        assertTrue(board.isCollision(new Point(3, 1)));
+        assertTrue(board.isCollision(new Point(1, 4)));
+        assertFalse(board.isCollision(new Point(0, 0)));
+        assertFalse(board.isCollision(new Point(2, 3)));
+    }
+
+    @Test
+    void testFoodGenerationBounds() {
+        Board board = new Board(10, 10);
+        // We rely on the fact that generateFood() places within bounds,
+        // but since food is private, just verify no exception and collision logic holds
+        for (int i = 0; i < 100; i++) {
+            board.generateFood();
+            // we can't peek at food set directly, but ensure no invalid state via collision()
+            // generateFood should never throw and leave board in valid state
+            // so this loop serves as a smoke test
+        }
+    }
+}
+```
