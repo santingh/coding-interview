@@ -83,6 +83,7 @@
 
 ### Technical Papers
 
+#### 📂 Classic & Industry Papers
 1. [Google File System (GFS)](https://lnkd.in/eVyZpQ98)
 2. [Google Chubby Locking Service](https://lnkd.in/eEXa6WYH)
 3. [Meta XFaaS: Hyperscale Serverless](https://lnkd.in/eHqbPXpH)
@@ -92,4 +93,15 @@
 7. [Amazon DynamoDB](https://lnkd.in/eQxJXgMs)
 8. [Uber LedgerStore](https://www.uber.com/en-IN/blog/how-ledgerstore-supports-trillions-of-indexes/)
 9. [Twitter Snowflake ID Generator](https://blog.x.com/engineering/en_us/a/2010/announcing-snowflake)
-10. [Whitepapers for Engineers (InterviewReady)](https://interviewready.io/blog/white-papers-worth-reading-for-software-engineers?gad_source=1&gclid=Cj0KCQjwir2xBhC_ARIsAMTXk848dUYGvpSHdTJ5lWEGOln2DWdSCfaNwH_V8-9lbaz4S0YUZjEAnRAaAgqVEALw_wcB)
+
+#### 🧠 Research & Innovation Papers
+10. [Challenges in Cloud Computing (HotOS '15)](https://www.cs.princeton.edu/~wlloyd/papers/challenges-hotos15.pdf)
+11. [Meta LLM-Powered Bug Catchers](https://engineering.fb.com/2025/02/05/security/revolutionizing-software-testing-llm-powered-bug-catchers-meta-ach/)
+12. [Transformer-based System Design Reasoning](https://arxiv.org/abs/2502.12962)
+13. [Modern Caching: USENIX NSDI 2020](https://www.usenix.org/system/files/nsdi20-paper-agache.pdf)
+14. [Towards Understanding Catastrophic Forgetting](https://arxiv.org/pdf/1911.04768)
+15. [Neuroscience & ML (bioRxiv)](https://www.biorxiv.org)
+16. [Data-Centric ML Pipelines](https://arxiv.org/abs/2410.06351)
+
+#### 📘 Additional Reading
+17. [Whitepapers for Engineers (InterviewReady)](https://interviewready.io/blog/white-papers-worth-reading-for-software-engineers?gad_source=1&gclid=Cj0KCQjwir2xBhC_ARIsAMTXk848dUYGvpSHdTJ5lWEGOln2DWdSCfaNwH_V8-9lbaz4S0YUZjEAnRAaAgqVEALw_wcB)
