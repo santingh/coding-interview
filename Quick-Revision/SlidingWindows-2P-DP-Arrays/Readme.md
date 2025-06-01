@@ -125,6 +125,18 @@ Use below techniques for variable length window.
 
 ---
 
+#### Monotonic Deque Problems
+1. **Sliding-Window Extrema**  
+   - LC 239, LC 1343  
+2. **Shortest ≥ K & Longest ≤ K**  
+   - LC 862, LC 962, LC 1438  
+3. **At Most / At Least K**  
+   - LC 480, LC 713, LC 992  
+4. **Maximum-Value Equations & Prefix-Sum + Deque**  
+   - LC 1499, LC 1851  
+5. **Advanced Prefix-Sum Counting**  
+   - LC 325, LC 930, LC 1248
+
 ## Practice Problems
 
 - [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)  
@@ -141,67 +153,6 @@ Use below techniques for variable length window.
 - Without repeating characters  
 - At most 2 distinct characters  
 - At most K distinct characters
-
----
-
-## Day-by-Day Study Plan
-
-### Day 1 – Bitmask & State-Compression
-- **Trick:** encode subsets in bits for 2ⁿ DP/BFS  
-- LC 465 – Optimal Account Balancing  
-- LC 1239 – Maximum Length of a Concatenated String with Unique Characters  
-- LC 1494 – Parallel Courses II
-
-### Day 2 – Fenwick/Segment Tree & Order-Statistic DS
-- **Trick:** range updates/queries in O(log n)  
-- LC 307 – Range Sum Query Mutable  
-- LC 315 – Count of Smaller Numbers After Self  
-- LC 327 – Count of Range Sum
-
-### Day 3 – Advanced Graph & DP on DAG
-- **Trick:** layered BFS, topo-sort, DP over DAG, path reconstruction  
-- LC 126 – Word Ladder II  
-- LC 269 – Alien Dictionary  
-- LC 210 – Course Schedule II
-
-### Day 4 – Trie & Suffix Structures
-- **Trick:** multi-pattern search via prefix trees (with compression/pruning)  
-- LC 212 – Word Search II  
-- LC 820 – Short Encoding of Words  
-- LC 425 – Word Squares
-
-### Day 5 – Greedy + Heaps (k-th & Sliding Windows)
-- **Trick:** use priority queues for top-k, medians, skyline, window extremes  
-- LC 239 – Sliding Window Maximum  
-- LC 218 – The Skyline Problem  
-- LC 295 – Find Median from Data Stream
-
-#### Monotonic Deque Problems
-1. **Sliding-Window Extrema**  
-   - LC 239, LC 1343  
-2. **Shortest ≥ K & Longest ≤ K**  
-   - LC 862, LC 962, LC 1438  
-3. **At Most / At Least K**  
-   - LC 480, LC 713, LC 992  
-4. **Maximum-Value Equations & Prefix-Sum + Deque**  
-   - LC 1499, LC 1851  
-5. **Advanced Prefix-Sum Counting**  
-   - LC 325, LC 930, LC 1248
-
-### Day 6 – Advanced DP (Interval, Digit, Tree/Matrix)
-- **Trick:** interval DP, binary-search + DP, memoized DFS on grids/trees  
-- LC 312 – Burst Balloons  
-- LC 887 – Super Egg Drop  
-- LC 329 – Longest Increasing Path in a Matrix
-
----
-
-## Suggested Practice Roadmap
-
-- Re-implement LC 862 & 962 from scratch until you can write them in 15 minutes.  
-- Mix in the two-deque “max–min ≤ limit” (LC 1438) to juggle two monotonic structures.  
-- Contrast with hash-map counting problems (LC 325, 930) to see why deque only works for “max/min” not counts.  
-- Finally, tackle LC 1499 (“Max Value of Equation”) to apply the deque idea on a transformed sequence.
 
 ---
 
