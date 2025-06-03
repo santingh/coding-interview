@@ -194,23 +194,6 @@ A curated list of classic LeetCode problems focused on string- and substring-bas
 
 ---
 
-## 🚀 Dynamic Programming (DP)
-
-| Problem                                 | #   | Description                                           |
-| --------------------------------------- | --- | ----------------------------------------------------- |
-| **[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)**  | 5   | Find the longest palindromic substring in a given string. |
-| **[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)**               | 647 | Count all palindromic substrings in a string.         |
-| **[Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)** | 516 | Find the longest palindromic subsequence.             |
-| **[Edit Distance](https://leetcode.com/problems/edit-distance/)**                                 | 72  | Compute minimum operations (insert/replace/delete) to convert one string into another. |
-| **[Word Break](https://leetcode.com/problems/word-break/)**                                       | 139 | Determine if a string can be segmented into dictionary words. |
-| **[Word Break II](https://leetcode.com/problems/word-break-ii/)**                                 | 140 | Return all valid segmentations of a string into dictionary words. |
-| **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)**                 | 115 | Count distinct ways to form one string as a subsequence of another. |
-| **[Interleaving String](https://leetcode.com/problems/interleaving-string/)**                     | 97  | Check if a string is formed by interleaving two others. |
-| **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)**     | 10  | Implement regex with `.` and `*` support.             |
-| **[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)**                         | 44  | Implement wildcard `?` and `*` pattern matching.      |
-
----
-
 ## 🧩 Backtracking
 
 | Problem                                 | #   | Description                                           |
