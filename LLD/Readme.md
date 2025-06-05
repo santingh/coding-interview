@@ -1,4 +1,4 @@
-```markdown
+
 # Low-Level Design (LLD) Practice Questions
 
 ---
