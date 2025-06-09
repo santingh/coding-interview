@@ -53,4 +53,78 @@
    - **Requirement:**  
      - Update counts and flag in **O(1)** amortized per message.  
      - Evict old message counts as time advances.  
-     - Memory bounded by distinct messages in window.  
+     - Memory bounded by distinct messages in window.
+    
+9. **URL Shortener with Expiring Links**  
+   - **Scenario:** A high-traffic URL shortening service must generate unique short codes and automatically expire them after **T** days.  
+   - **Requirement:**  
+     - `create(url)` in **O(1)** average  
+     - `resolve(code)` in **O(1)**  
+     - `cleanupExpired()` in **O(1)** per expired entry  
+   - **Pattern:** Hashing + Min-Heap for expirations + Bi-directional maps  
+
+10. **File Versioning with Delta Storage**  
+   - **Scenario:** Store and retrieve file versions efficiently by saving only the differences (deltas) between versions.  
+   - **Requirement:**  
+     - `commit(versionId, fileContent)` stores delta in **O(d)** where _d_ = size of diff  
+     - `checkout(versionId)` reconstructs full file in **O(v + d)** where _v_ = # of versions traversed  
+   - **Pattern:** Persistent data structures (copy-on-write) + diff algorithms  
+
+11. **Autocomplete with Typo Tolerance**  
+   - **Scenario:** A search box should suggest up to **K** completions for a user’s query, allowing one character insertion/deletion/substitution.  
+   - **Requirement:**  
+     - Build index on _N_ dictionary words in **O(N·L²)** prep (_L_ = avg word length)  
+     - `suggest(prefix)` in **O(L + R)** where _R_ = # of results returned  
+   - **Pattern:** Trie + Levenshtein automaton (dynamic programming)  
+
+12. **Distributed Cache with Consistent Hashing**  
+   - **Scenario:** A distributed in-memory cache cluster must evenly spread keys across nodes and gracefully handle node additions/removals.  
+   - **Requirement:**  
+     - Key lookup in **O(log M)** (_M_ = # of virtual nodes)  
+     - Rebalance ≤ 1/M of keys on node join/leave  
+   - **Pattern:** Consistent hashing with virtual nodes  
+
+13. **Real-Time Approximate Counting (Heavy Hitters)**  
+   - **Scenario:** Identify items that occur more than φ fraction of events in a high-speed stream.  
+   - **Requirement:**  
+     - Process each event in **O(1)** amortized  
+     - Report heavy hitters (freq ≥ φ·stream_length) with ≤ ε error  
+   - **Pattern:** Misra–Gries algorithm or Count-Min Sketch  
+
+14. **Collaborative Document Editing (CRDT)**  
+   - **Scenario:** Multiple users edit a shared document concurrently; updates must merge conflict-free without central coordination.  
+   - **Requirement:**  
+     - Generate & apply edits in **O(log E)** where _E_ = total edits  
+     - Converge to the same state on all replicas  
+   - **Pattern:** Vector clocks + CRDT sequence (e.g., RGA or Logoot)  
+
+15. **Real-Time Geospatial Range Queries**  
+   - **Scenario:** Ingest moving-object location updates and answer “How many objects are inside this rectangle?” queries on the fly.  
+   - **Requirement:**  
+     - Update an object’s position in **O(log N)**  
+     - Range query in **O(log N + R)** where _R_ = # objects in range  
+   - **Pattern:** 2D Range Tree or k-d Tree  
+
+16. **Dependency-Aware Task Scheduler**  
+   - **Scenario:** Schedule tasks that have arbitrary dependencies (a DAG), executing ready tasks as soon as all prerequisites finish.  
+   - **Requirement:**  
+     - `addTask(id, deps[])` in **O(d)** (_d_ = # of deps)  
+     - On dependency completion, enqueue dependent tasks in **O(1)** each  
+     - `getNextReadyTask()` in **O(1)**  
+   - **Pattern:** Topological sort using in-degree counts + queue  
+
+17. **Dynamic Graph Connectivity**  
+   - **Scenario:** Maintain an undirected graph under **online** edge insertions/removals and answer connectivity queries in real time.  
+   - **Requirement:**  
+     - `addEdge(u,v)` in **O(α(N))** amortized  
+     - `removeEdge(u,v)` in **O(α(N))** amortized  
+     - `isConnected(u,v)` in **O(α(N))** amortized  
+   - **Pattern:** Union-Find with rollback or Euler Tour Trees  
+
+18. **Real-Time Prefix Sums with Point Updates**  
+    - **Scenario:** Maintain an array under point updates and prefix-sum queries in a high-throughput system.  
+    - **Requirement:**  
+      - `update(index, delta)` in **O(log N)**  
+      - `prefixSum(index)` in **O(log N)**  
+    - **Pattern:** Fenwick Tree (Binary Indexed Tree)  
+
